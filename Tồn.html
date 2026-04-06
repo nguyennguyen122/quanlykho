@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý kho</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+<h1>📦 Quản lý Xuất - Nhập - Tồn Cây me</h1>
+
+<!-- 🔹 FORM NHẬP/XUẤT -->
+<div class="box">
+    <input id="name" placeholder="Tên sản phẩm">
+    <input id="quantity" type="number" placeholder="Số lượng">
+    <input id="location" placeholder="Vị trí (kho, kệ...)">
+
+    <br><br>
+
+    <button class="import" onclick="handle('import')">Nhập</button>
+    <button class="export" onclick="handle('export')">Xuất</button>
+    <button onclick="report()">📊 Báo cáo</button>
+</div>
+
+<!-- 🔹 SEARCH -->
+<input id="search" placeholder="🔍 Tìm kiếm..." onkeyup="loadData()">
+
+<!-- 🔹 TỔNG -->
+<h3 id="total">Tổng: 0 bao (0 kg)</h3>
+
+<!-- 🔹 TABLE KHO -->
+<h2>📦 Tồn kho</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Tên gạo</th>
+            <th>Bao</th>
+            <th>Lượng hàng (kg)</th>
+            <th>Vị trí</th>
+            <th>Ngày cập nhập</th>
+            <th>Tổng</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<!-- 🔥 LỊCH SỬ -->
+<h2>📜 Lịch sử giao dịch</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Thời gian</th>
+            <th>Tên</th>
+            <th>Loại</th>
+            <th>Số lượng</th>
+            <th>Vị trí</th>
+        </tr>
+    </thead>
+    <tbody id="logTable"></tbody>
+</table>
+
+<script src="2.js"></script>
+</body>
+</html>

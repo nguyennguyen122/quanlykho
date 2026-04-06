@@ -1,0 +1,158 @@
+/* RESET */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    text-align: center;
+}
+
+/* TIÊU ĐỀ */
+h1 {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* FORM */
+.box {
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.4);
+}
+
+/* BUTTON */
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* NÚT NHẬP */
+.import {
+    background: #2ecc71;
+    color: white;
+}
+.import:hover {
+    background: #27ae60;
+}
+
+/* NÚT XUẤT */
+.export {
+    background: #e74c3c;
+    color: white;
+}
+.export:hover {
+    background: #c0392b;
+}
+
+/* SEARCH */
+#search {
+    margin-top: 10px;
+    width: 300px;
+}
+
+/* TỔNG */
+#total {
+    margin: 15px;
+    color: #2c3e50;
+}
+
+/* TABLE */
+/* TABLE */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 85%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* 🔥 THÊM CÁI NÀY (QUAN TRỌNG) */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td, th {
+    text-align: center;
+}
+
+/* HEADER */
+thead {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+th {
+    border-bottom: 2px solid #2c3e50;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* BODY */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* DÒNG XEN KẼ */
+tbody tr:nth-child(even) {
+    background: #f8f9fb;
+}
+
+/* HOVER */
+tbody tr:hover {
+    background: #eafaf1;
+    transform: scale(1.01);
+}
+
+/* CỘT KG */
+td:nth-child(3) {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* CỘT TỔNG */
+td:last-child {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    input {
+        width: 150px;
+    }
+}
